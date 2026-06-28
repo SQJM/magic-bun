@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["bun"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["index.ts", "script/**/*.ts", "app.ts", "types/**/*.d.ts"]
+}

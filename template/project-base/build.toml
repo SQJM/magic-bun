@@ -1,0 +1,65 @@
+# 配置
+[config]
+# 项目名字
+name = "$name"
+# 源码目录
+src = "app"
+# 入口文件名
+main = "index"
+version = "1.0.0"
+description = ""
+author = ""
+license = ""
+
+# 构建配置
+[build]
+# 项目是否为模块
+module = false
+# 模块源目录
+module-src = "$name-module"
+# 模块构建目录名
+module-out = "build-module"
+# 构建目录名
+out = "build"
+# 发布模式 debug | release
+model = "debug"
+# 增量编译
+incremental = true
+# 干运行模式(检验不生成文件)
+dry-run = false
+# 构建前执行程序
+front-run = []
+# 构建后执行程序
+back-run = []
+
+# 构建导入
+[build.import]
+module = []
+
+# 排除项
+[build.exclude]
+file = []
+dir = []
+
+# 优化
+[build.optimize]
+# 编译 default-theme 文件
+out-default-theme = true
+# 自动去除未使用的组件
+remove-unused = false
+
+# 压缩代码
+[build.optimize.min-code]
+js = false
+css = false
+html = false
+
+[build.output]
+# 是否输出 source map(.js.map / .css.map),便于浏览器 DevTools 调试原始源码
+source-map = false
+# 单个 JS 文件分块阈值(KB),超过则按 size 切分. 0 表示不切分
+chunk-size = 1024
+
+# Server 配置
+[dev]
+server = { port = 8088, host = "::" }

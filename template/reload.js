@@ -1,0 +1,1 @@
+(function () { var ws = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host); ws.onmessage = function (e) { if (e.data === 'reload') { console.log('[Magic] 构建完成,刷新页面...'); location.reload(); } } })();

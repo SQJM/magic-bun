@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Magic 全栈 Web 框架官方文档" />
+  <title>Magic Docs · Magic Framework</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./logo.png" />
+  <meta name="theme-color" content="#31A9FF" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <header class="topbar acrylic" role="banner">
+    <div class="topbar-left">
+      <a class="brand" href="#/" aria-label="Magic Docs">
+        <img class="brand-logo" src="./logo.png" alt="" aria-hidden="true" />
+        <span class="brand-text">
+          <span class="brand-name">Magic</span>
+          <span class="brand-sub" data-i18n="brand">Docs</span>
+        </span>
+      </a>
+      <nav class="topnav" aria-label="主导航">
+        <a href="https://sqjm.github.io" data-nav="web" data-i18n="nav.web">官网</a>
+        <a href="#/" data-nav="home" data-i18n="nav.home">首页</a>
+        <a href="#/docs" data-nav="docs" data-i18n="nav.docs">文档</a>
+      </nav>
+    </div>
+    <div class="topbar-right">
+      <button class="search-trigger" id="search-trigger" aria-label="搜索文档">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M21 21l-4.3-4.3" />
+        </svg>
+        <span data-i18n="search.placeholder">搜索文档...</span>
+        <kbd id="search-kbd">Ctrl K</kbd>
+      </button>
+      <div class="lang-switcher" id="lang-switcher" role="group" aria-label="语言切换">
+        <button class="lang-btn" data-locale="zh-CN" aria-pressed="true">中</button>
+        <button class="lang-btn" data-locale="en-US" aria-pressed="false">EN</button>
+      </div>
+      <button class="theme-btn" id="theme-btn" aria-label="切换主题" title="切换主题">
+        <span class="theme-icon" id="theme-icon"></span>
+      </button>
+    </div>
+  </header>
+  <div class="search-panel" id="search-panel" role="dialog" aria-modal="true" aria-label="搜索">
+    <div class="search-panel-inner acrylic">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M21 21l-4.3-4.3" />
+        </svg>
+        <input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="搜索文档..."
+          data-i18n-placeholder="search.placeholder" />
+        <button class="search-close" id="search-close" aria-label="关闭">
+          <kbd>Esc</kbd>
+        </button>
+      </div>
+      <div class="search-hint" data-i18n="search.hint">输入关键词以搜索标题,章节与正文</div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+  <main id="app" class="app-shell" role="main"></main>
+  <footer class="site-footer acrylic" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <img class="footer-logo" src="./logo.png" alt="" aria-hidden="true" />
+        <div class="footer-brand-text">
+          <div class="footer-name">Magic Framework</div>
+          <div class="footer-tagline" data-i18n="footer.tagline">用更现代的方式构建 Web 应用</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title" data-i18n="footer.about">关于项目</h5>
+        <ul class="footer-list">
+          <li><span class="footer-key" data-i18n="footer.author">作者</span>:<a class="footer-link"
+              href="https://github.com/SQJM" target="_blank" rel="noopener noreferrer">SQJM</a></li>
+          <li><span class="footer-key" data-i18n="footer.license">许可证</span>:<a class="footer-link"
+              href="https://github.com/SQJM/magic-bun/blob/main/LICENSE" target="_blank"
+              rel="noopener noreferrer">MIT</a></li>
+          <li><span class="footer-key" data-i18n="footer.copyright">版权所有</span>:&copy; 2026 SQJM</li>
+          <li><span class="footer-key" data-i18n="footer.builtWith">技术栈</span>:<a class="footer-link"
+              href="https://bun.sh" target="_blank" rel="noopener noreferrer">Bun.js</a> + Magic</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title" data-i18n="footer.links">相关链接</h5>
+        <ul class="footer-list">
+          <li>
+            <a class="footer-link footer-link-icon" href="https://github.com/SQJM/magic-bun" target="_blank"
+              rel="noopener noreferrer" aria-label="GitHub Repository">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.1.79-.25.79-.55v-2.13c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.25 5.68.41.35.78 1.05.78 2.11v3.13c0 .3.21.66.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+              </svg>
+              <span data-i18n="footer.repository">源代码仓库</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link footer-link-icon" href="https://github.com/SQJM/magic-bun/issues" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4M12 16h.01" />
+              </svg>
+              <span data-i18n="footer.issues">问题反馈</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link footer-link-icon" href="https://www.npmjs.com/package/@love-sqjm/magic"
+              target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                <path d="M0 7.5v9h6.75V12H12v4.5h12v-9H0zm1.5 1.5h9v3.75h-1.5V10.5h-3v6H1.5V9zM13.5 9H22.5v6h-9V9z" />
+              </svg>
+              <span data-i18n="footer.npmPackage">NPM 包</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.madeWith">Built with</span>
+      <span class="footer-heart" aria-hidden="true">&hearts;</span>
+      <span data-i18n="footer.byMagic">by</span>
+      <a class="footer-link" href="https://github.com/SQJM" target="_blank" rel="noopener noreferrer">SQJM</a>
+      <span class="footer-sep">&middot;</span>
+      <a class="footer-link" href="https://github.com/SQJM/magic-bun" target="_blank"
+        rel="noopener noreferrer">magic-bun</a>
+      <span class="footer-sep">&middot;</span>
+      <span>&copy; 2026</span>
+    </div>
+  </footer>
+  <template id="tpl-home">
+    <section class="hero stagger-1 animate-slide-up">
+      <div class="hero-inner">
+        <div class="hero-eyebrow" data-i18n="home.eyebrow">Magic Framework</div>
+        <h1 class="hero-title" data-i18n="home.title">用更现代的方式构建 Web 应用</h1>
+        <p class="hero-subtitle" data-i18n="home.subtitle">基于 Bun.js 的全栈框架,融合编译器,运行时与插件系统,让组件,路由,实时刷新一气呵成.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#/docs" data-i18n="home.ctaPrimary">开始阅读</a>
+          <a class="btn btn-ghost" href="#/docs/API参考" data-i18n="home.ctaSecondary">查看 API</a>
+        </div>
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+      </div>
+    </section>
+    <section class="features stagger-2 animate-slide-up">
+      <header class="section-head">
+        <h2 data-i18n="home.featuresTitle">为什么选择 Magic</h2>
+        <p data-i18n="home.featuresSubtitle">为追求开发体验与运行性能的工程师打造.</p>
+      </header>
+      <div class="features-grid" id="features-grid"></div>
+    </section>
+    <section class="docs-map stagger-3 animate-slide-up">
+      <header class="section-head">
+        <h2 data-i18n="home.docsTitle">文档地图</h2>
+        <p data-i18n="home.docsSubtitle">14 篇文档,覆盖入门,进阶与参考.</p>
+      </header>
+      <div class="docs-map-grid" id="docs-map-grid"></div>
+    </section>
+  </template>
+  <template id="tpl-docs-index">
+    <div class="docs-shell">
+      <aside class="side-nav acrylic" id="side-nav" aria-label="文档导航"></aside>
+      <div class="docs-main">
+        <header class="docs-header animate-fade-in">
+          <h1 data-i18n="docs.indexTitle">所有文档</h1>
+          <p data-i18n="docs.indexSubtitle">按分类浏览所有 Magic 文档</p>
+        </header>
+        <div class="filter-chips" id="filter-chips"></div>
+        <div class="docs-grid" id="docs-grid"></div>
+      </div>
+    </div>
+  </template>
+  <template id="tpl-doc-detail">
+    <div class="detail-shell">
+      <aside class="side-nav acrylic" id="side-nav" aria-label="文档导航"></aside>
+      <article class="doc-content" id="doc-content">
+        <div class="loading">加载中...</div>
+      </article>
+      <aside class="outline-nav" id="outline-nav" aria-label="本页大纲"></aside>
+    </div>
+  </template>
+  <template id="tpl-notfound">
+    <section class="not-found animate-fade-in">
+      <div class="not-found-icon">404</div>
+      <h1 data-i18n="notFound.title">未找到页面</h1>
+      <p data-i18n="notFound.desc">您访问的页面不存在或已被移除.</p>
+      <a class="btn btn-primary" href="#/" data-i18n="notFound.back">返回首页</a>
+    </section>
+  </template>
+  <!-- Data files as JS globals (no XHR needed) -->
+  <!-- docs.js removed: doc content is now lazy-loaded on demand (saves ~233KB upfront) -->
+  <script src="./data/config.js"></script>
+  <script src="./data/icons.js"></script>
+  <script src="./i18n/zh-CN.js"></script>
+  <script src="./i18n/en-US.js"></script>
+  <script defer src="./vendor.bundle.js"></script>
+  <script src="./markdown.js"></script>
+  <script src="./data.js"></script>
+  <script src="./i18n.js"></script>
+  <script src="./search.js"></script>
+  <script src="./app.js"></script>
+
+  <button class="back-to-top" id="back-to-top" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5" />
+      <path d="M5 12l7-7 7 7" />
+    </svg>
+  </button>
+</body>
+
+</html>

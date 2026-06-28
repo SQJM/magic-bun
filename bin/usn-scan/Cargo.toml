@@ -1,0 +1,6 @@
+[package]
+name = "usn-scan"
+version = "0.1.0"
+edition = "2021"
+
+# Zero external dependencies - pure stdlib for sandbox compatibility
