@@ -1,0 +1,10 @@
+node_modules/
+.idea/
+.git/
+npm.txt
+up.ps1
+bun.lockb
+Magic.log
+bin/usn-scan/target/
+bin/usn-scan/Cargo.lock
+zn.md

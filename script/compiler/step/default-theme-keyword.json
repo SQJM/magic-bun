@@ -1,0 +1,221 @@
+{
+  "categories": [
+    {
+      "name": "颜色与透明度",
+      "nameEn": "Colors & Opacity",
+      "properties": [
+        { "property": "color", "chinese": "文本颜色", "note": "核心前景色" },
+        { "property": "background", "chinese": "背景(简写)", "note": "可包含背景色与背景图像" },
+        { "property": "background-color", "chinese": "背景颜色", "note": "纯色背景值" },
+        { "property": "background-image", "chinese": "背景图像", "note": "可包含 URL 或渐变,需随主题更换" },
+        { "property": "border-color", "chinese": "边框颜色(简写)", "note": "四边边框颜色" },
+        { "property": "border-top-color", "chinese": "上边框颜色", "note": "单边颜色" },
+        { "property": "border-right-color", "chinese": "右边框颜色", "note": "单边颜色" },
+        { "property": "border-bottom-color", "chinese": "下边框颜色", "note": "单边颜色" },
+        { "property": "border-left-color", "chinese": "左边框颜色", "note": "单边颜色" },
+        { "property": "border-block-color", "chinese": "块向边框颜色(简写)", "note": "逻辑属性颜色" },
+        { "property": "border-block-start-color", "chinese": "块起始边框颜色", "note": "逻辑属性颜色" },
+        { "property": "border-block-end-color", "chinese": "块结束边框颜色", "note": "逻辑属性颜色" },
+        { "property": "border-inline-color", "chinese": "行内方向边框颜色(简写)", "note": "逻辑属性颜色" },
+        { "property": "border-inline-start-color", "chinese": "行内起始边框颜色", "note": "逻辑属性颜色" },
+        { "property": "border-inline-end-color", "chinese": "行内结束边框颜色", "note": "逻辑属性颜色" },
+        { "property": "outline-color", "chinese": "轮廓颜色", "note": "焦点可见性轮廓色" },
+        { "property": "caret-color", "chinese": "光标颜色", "note": "输入光标颜色" },
+        { "property": "accent-color", "chinese": "强调色", "note": "表单控件强调色" },
+        { "property": "text-decoration-color", "chinese": "文本装饰线颜色", "note": "下划线,删除线等颜色" },
+        { "property": "text-emphasis-color", "chinese": "文本强调颜色", "note": "着重号颜色" },
+        { "property": "column-rule-color", "chinese": "列分割线颜色", "note": "多列布局分隔线颜色" },
+        { "property": "fill", "chinese": "SVG 填充色", "note": "形状内部填充色" },
+        { "property": "stroke", "chinese": "SVG 描边色", "note": "形状轮廓颜色" },
+        { "property": "color-interpolation", "chinese": "色彩插值方式", "note": "控制渐变或滤镜中的色彩空间" },
+        { "property": "-webkit-tap-highlight-color", "chinese": "移动端点击高亮色", "note": "触摸反馈背景色" },
+        { "property": "-webkit-text-fill-color", "chinese": "WebKit 文本填充色", "note": "覆盖 color 的文本填充颜色" },
+        { "property": "-webkit-text-stroke", "chinese": "WebKit 文本描边(简写)", "note": "同时设置描边宽度与颜色" },
+        { "property": "-webkit-text-stroke-color", "chinese": "WebKit 文本描边颜色", "note": "描边颜色组件" },
+        { "property": "-webkit-text-stroke-width", "chinese": "WebKit 文本描边宽度", "note": "描边厚度,影响视觉权重" },
+        { "property": "stop-color", "chinese": "渐变停止颜色", "note": "SVG 渐变停止点的颜色" },
+        { "property": "flood-color", "chinese": "滤镜泛洪颜色", "note": "<feFlood> 滤镜的填充色" },
+        { "property": "lighting-color", "chinese": "光照颜色", "note": "SVG 光照滤镜效果的颜色" },
+        { "property": "fill-opacity", "chinese": "SVG 填充透明度", "note": "形状填充不透明度" },
+        { "property": "stroke-opacity", "chinese": "SVG 描边透明度", "note": "形状描边不透明度" },
+        { "property": "stop-opacity", "chinese": "渐变停止透明度", "note": "渐变停止点的不透明度" },
+        { "property": "flood-opacity", "chinese": "滤镜泛洪透明度", "note": "<feFlood> 滤镜的不透明度" }
+      ]
+    },
+    {
+      "name": "背景",
+      "nameEn": "Background",
+      "properties": [
+        { "property": "background-position", "chinese": "背景位置", "note": "背景图像的起始位置" },
+        { "property": "background-size", "chinese": "背景尺寸", "note": "背景图像的缩放尺寸" },
+        { "property": "background-repeat", "chinese": "背景重复", "note": "背景图像是否及如何平铺" },
+        { "property": "background-attachment", "chinese": "背景附着", "note": "背景是否随视口滚动" },
+        { "property": "background-origin", "chinese": "背景原点", "note": "背景定位的参考区域" },
+        { "property": "background-clip", "chinese": "背景裁剪", "note": "背景绘制区域的裁剪范围" }
+      ]
+    },
+    {
+      "name": "字体与文本渲染",
+      "nameEn": "Font & Text Rendering",
+      "properties": [
+        { "property": "font", "chinese": "字体(简写)", "note": "一次性设置多个字体属性" },
+        { "property": "font-family", "chinese": "字体族", "note": "字体系列名称" },
+        { "property": "font-size", "chinese": "字号", "note": "字体大小" },
+        { "property": "font-weight", "chinese": "字重", "note": "字体粗细" },
+        { "property": "font-style", "chinese": "字体样式", "note": "斜体,倾斜等样式" },
+        { "property": "font-variant", "chinese": "字体变体", "note": "小型大写等变体" },
+        { "property": "font-stretch", "chinese": "字体伸缩", "note": "字体的水平宽度变形" },
+        { "property": "font-kerning", "chinese": "字距调整", "note": "是否开启字体内部字距" },
+        { "property": "font-feature-settings", "chinese": "字体特性设置", "note": "OpenType 特性开关" },
+        { "property": "font-variation-settings", "chinese": "可变字体设置", "note": "精细控制可变轴" },
+        { "property": "font-optical-sizing", "chinese": "光学尺寸优化", "note": "根据字号自动调整字体形态" },
+        { "property": "font-synthesis", "chinese": "字体合成", "note": "控制浏览器是否合成粗体或斜体" },
+        { "property": "font-size-adjust", "chinese": "字号调整", "note": "保证备用字体 x-height 一致" },
+        { "property": "-webkit-font-smoothing", "chinese": "WebKit 字体平滑", "note": "macOS/iOS 抗锯齿方式" },
+        { "property": "-moz-osx-font-smoothing", "chinese": "Firefox macOS 字体平滑", "note": "macOS 上灰度平滑控制" }
+      ]
+    },
+    {
+      "name": "排版",
+      "nameEn": "Typography",
+      "properties": [
+        { "property": "line-height", "chinese": "行高", "note": "行框高度" },
+        { "property": "letter-spacing", "chinese": "字间距", "note": "字符额外间距" },
+        { "property": "word-spacing", "chinese": "词间距", "note": "单词间隔" },
+        { "property": "text-indent", "chinese": "文本缩进", "note": "首行缩进量" },
+        { "property": "text-align", "chinese": "文本对齐", "note": "水平对齐方式" },
+        { "property": "text-align-last", "chinese": "末行对齐", "note": "最后一行对齐方式" },
+        { "property": "text-justify", "chinese": "两端对齐方式", "note": "控制两端对齐的间距算法" },
+        { "property": "text-decoration", "chinese": "文本装饰(简写)", "note": "下划线,上划线,删除线等" },
+        { "property": "text-decoration-style", "chinese": "装饰线样式", "note": "实线,虚线,波浪线等" },
+        { "property": "text-decoration-thickness", "chinese": "装饰线粗细", "note": "线的厚度" },
+        { "property": "text-decoration-line", "chinese": "装饰线类型", "note": "应用下划线,上划线还是删除线" },
+        { "property": "text-underline-offset", "chinese": "下划线偏移", "note": "下划线与文本的距离" },
+        { "property": "text-underline-position", "chinese": "下划线位置", "note": "下划线相对于基线的位置" },
+        { "property": "text-decoration-skip-ink", "chinese": "装饰线跳过降部", "note": "下划线是否避开字母降部" },
+        { "property": "text-transform", "chinese": "文本转换", "note": "大小写或全大写转换" },
+        { "property": "text-shadow", "chinese": "文本阴影", "note": "文字投影效果" },
+        { "property": "text-overflow", "chinese": "文本溢出", "note": "溢出文本的省略样式" },
+        { "property": "word-break", "chinese": "单词断行", "note": "单词内换行规则" },
+        { "property": "overflow-wrap", "chinese": "溢出换行", "note": "长单词或 URL 换行" },
+        { "property": "white-space", "chinese": "空白处理", "note": "空白与换行符的处理方式" },
+        { "property": "hyphens", "chinese": "连字符", "note": "自动断词连字符" },
+        { "property": "vertical-align", "chinese": "垂直对齐", "note": "行内元素垂直对齐" },
+        { "property": "tab-size", "chinese": "制表符宽度", "note": "Tab 字符的显示宽度" },
+        { "property": "text-emphasis", "chinese": "文本强调(简写)", "note": "着重号样式与颜色" }
+      ]
+    },
+    {
+      "name": "边框与轮廓",
+      "nameEn": "Borders & Outlines",
+      "properties": [
+        { "property": "border", "chinese": "边框(简写)", "note": "边框宽度,样式,颜色" },
+        { "property": "border-block", "chinese": "块向边框(简写)", "note": "逻辑边框的 start 和 end" },
+        { "property": "border-block-start", "chinese": "块起始边框(简写)", "note": "单边逻辑边框" },
+        { "property": "border-block-end", "chinese": "块结束边框(简写)", "note": "单边逻辑边框" },
+        { "property": "border-inline", "chinese": "行内方向边框(简写)", "note": "逻辑边框的 start 和 end" },
+        { "property": "border-inline-start", "chinese": "行内起始边框(简写)", "note": "单边逻辑边框" },
+        { "property": "border-inline-end", "chinese": "行内结束边框(简写)", "note": "单边逻辑边框" },
+        { "property": "border-width", "chinese": "边框宽度", "note": "四边边框宽度" },
+        { "property": "border-style", "chinese": "边框样式", "note": "实线,虚线,点线等" },
+        { "property": "border-radius", "chinese": "边框圆角", "note": "圆角半径" },
+        { "property": "border-image", "chinese": "边框图像(简写)", "note": "使用图像绘制边框" },
+        { "property": "border-image-source", "chinese": "边框图像源", "note": "图像 URL 或渐变" },
+        { "property": "border-image-slice", "chinese": "边框图像切片", "note": "九宫格分割偏移" },
+        { "property": "border-image-width", "chinese": "边框图像宽度", "note": "图像边框的厚度" },
+        { "property": "border-image-outset", "chinese": "边框图像外延", "note": "边框图像向外扩展量" },
+        { "property": "border-image-repeat", "chinese": "边框图像重复", "note": "边缘图像的平铺方式" },
+        { "property": "outline", "chinese": "轮廓(简写)", "note": "轮廓宽度,样式,颜色" },
+        { "property": "outline-width", "chinese": "轮廓宽度", "note": "焦点轮廓的厚度" },
+        { "property": "outline-style", "chinese": "轮廓样式", "note": "轮廓的线条样式" },
+        { "property": "outline-offset", "chinese": "轮廓偏移", "note": "轮廓与边框的距离" },
+        { "property": "column-rule", "chinese": "列分割线(简写)", "note": "列间分隔线的样式,宽度,颜色" },
+        { "property": "column-rule-width", "chinese": "列分割线宽度", "note": "分隔线粗细" },
+        { "property": "column-rule-style", "chinese": "列分割线样式", "note": "分隔线线型" }
+      ]
+    },
+    {
+      "name": "视觉效果",
+      "nameEn": "Visual Effects",
+      "properties": [
+        { "property": "opacity", "chinese": "不透明度", "note": "整个元素透明度" },
+        { "property": "box-shadow", "chinese": "盒阴影", "note": "元素阴影效果" },
+        { "property": "filter", "chinese": "滤镜", "note": "模糊,亮度,对比度等图形滤镜" },
+        { "property": "backdrop-filter", "chinese": "背景滤镜", "note": "元素后方区域的滤镜效果" },
+        { "property": "mix-blend-mode", "chinese": "混合模式", "note": "内容与背景的混合方式" },
+        { "property": "background-blend-mode", "chinese": "背景混合模式", "note": "多层背景之间的混合" },
+        { "property": "clip-path", "chinese": "裁剪路径", "note": "元素可见区域的形状" },
+        { "property": "image-rendering", "chinese": "图像渲染", "note": "缩放时平滑或像素化" },
+        { "property": "isolation", "chinese": "隔离", "note": "创建独立的混合上下文" }
+      ]
+    },
+    {
+      "name": "变换",
+      "nameEn": "Transforms",
+      "properties": [
+        { "property": "transform", "chinese": "变换", "note": "平移,旋转,缩放等变换操作" },
+        { "property": "transform-origin", "chinese": "变换原点", "note": "变换所围绕的基准点" },
+        { "property": "transform-style", "chinese": "变换样式", "note": "3D 空间中子元素的表现" },
+        { "property": "perspective", "chinese": "透视", "note": "3D 透视距离" },
+        { "property": "perspective-origin", "chinese": "透视原点", "note": "3D 透视的观察点位置" }
+      ]
+    },
+    {
+      "name": "蒙版",
+      "nameEn": "Masks",
+      "properties": [
+        { "property": "mask", "chinese": "蒙版(简写)", "note": "一次性设置蒙版属性" },
+        { "property": "mask-image", "chinese": "蒙版图像", "note": "用作蒙版的图像或渐变" },
+        { "property": "mask-size", "chinese": "蒙版尺寸", "note": "蒙版图像的缩放大小" },
+        { "property": "mask-position", "chinese": "蒙版位置", "note": "蒙版图像的起始位置" },
+        { "property": "mask-repeat", "chinese": "蒙版重复", "note": "蒙版图像是否平铺" },
+        { "property": "mask-origin", "chinese": "蒙版原点", "note": "蒙版定位的参考区域" },
+        { "property": "mask-clip", "chinese": "蒙版裁剪", "note": "蒙版的有效绘制区域" },
+        { "property": "mask-composite", "chinese": "蒙版合成", "note": "多个蒙版层的合成方式" },
+        { "property": "mask-mode", "chinese": "蒙版模式", "note": "按 Alpha 还是亮度处理蒙版" }
+      ]
+    },
+    {
+      "name": "动画",
+      "nameEn": "Animations",
+      "properties": [
+        { "property": "animation", "chinese": "动画(简写)", "note": "动画相关属性的简写" },
+        { "property": "animation-name", "chinese": "动画名称", "note": "引用的 @keyframes 名称" },
+        { "property": "animation-duration", "chinese": "动画时长", "note": "动画一个周期的持续时间" },
+        { "property": "animation-timing-function", "chinese": "动画缓动函数", "note": "动画速度变化曲线" },
+        { "property": "animation-delay", "chinese": "动画延迟", "note": "动画开始前的等待时间" },
+        { "property": "animation-iteration-count", "chinese": "动画迭代次数", "note": "动画重复播放次数" },
+        { "property": "animation-direction", "chinese": "动画方向", "note": "正向,反向或交替播放" },
+        { "property": "animation-fill-mode", "chinese": "动画填充模式", "note": "动画首尾状态保持" },
+        { "property": "animation-play-state", "chinese": "动画播放状态", "note": "暂停或运行" }
+      ]
+    },
+    {
+      "name": "过渡",
+      "nameEn": "Transitions",
+      "properties": [
+        { "property": "transition", "chinese": "过渡(简写)", "note": "过渡属性的简写" },
+        { "property": "transition-property", "chinese": "过渡属性", "note": "应用过渡效果的 CSS 属性名" },
+        { "property": "transition-duration", "chinese": "过渡时长", "note": "过渡效果持续时间" },
+        { "property": "transition-timing-function", "chinese": "过渡缓动函数", "note": "中间值的变化曲线" },
+        { "property": "transition-delay", "chinese": "过渡延迟", "note": "过渡开始前的等待时间" }
+      ]
+    },
+    {
+      "name": "其他",
+      "nameEn": "Others",
+      "properties": [
+        { "property": "list-style", "chinese": "列表样式(简写)", "note": "列表项标记类型,图像和位置" },
+        { "property": "list-style-type", "chinese": "列表标记类型", "note": "圆点,数字等标记样式" },
+        { "property": "list-style-image", "chinese": "列表标记图像", "note": "自定义标记的 URL 图像" },
+        { "property": "cursor", "chinese": "光标", "note": "鼠标指针样式或自定义图像" },
+        { "property": "scrollbar-color", "chinese": "滚动条颜色", "note": "自定义滚动条滑块与轨道的颜色" },
+        { "property": "scrollbar-width", "chinese": "滚动条宽度", "note": "滚动条的粗细" },
+        { "property": "scrollbar-gutter", "chinese": "滚动条槽", "note": "预留给滚动条的空间" },
+        { "property": "color-scheme", "chinese": "配色方案", "note": "声明支持亮色/暗色模式,影响系统组件" },
+        { "property": "appearance", "chinese": "控件外观", "note": "保留或重置原生控件样式" },
+        { "property": "content", "chinese": "生成内容", "note": "伪元素内容,可包含 URL 图像" }
+      ]
+    }
+  ]
+}
